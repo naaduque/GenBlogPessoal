@@ -1,0 +1,9 @@
+.homeBG{
+    background-image: url("../../assets-imagens/Wanda\ costume.gif");
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: calc(100vh - 220px);
+
+    background-size: 1000px;
+    background-position: center;
+}
