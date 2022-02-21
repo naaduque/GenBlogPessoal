@@ -1,8 +1,20 @@
-.footerColor{
-    background: #3a0202;
-    margin-top: 2px;
+.box1{
+    background-color: #3a0202;
+    
+    height: "115px";
 }
 
-.iconColor{
-    color:#f5edf1;
+.box2{
+    background-color:#3a0202;
+    height: 60px;
 }
+
+.redes{
+    font-size: 60px !important;
+    color:  white;
+}
+
+.textos{
+    color: white;
+}
+
