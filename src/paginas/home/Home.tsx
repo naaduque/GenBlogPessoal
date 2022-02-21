@@ -19,9 +19,9 @@ function Home() {
                     </Box>
 
                 </Grid>
-                {/*<Grid item xs={6} > */}
-                    {/*<img src="https://th.bing.com/th/id/OIP.int26JdeIopr3mvVRFiFcwHaEK?pid=ImgDet&rs=1" alt=" " width="320px" height="200" />*/}
-                {/*</Grid> */}
+                <Grid item xs={6} > 
+                    <img src="https://media2.giphy.com/media/1wgWg37SF9FZS6tCCJ/giphy.gif" alt=" " width="640px" height="600" />
+                </Grid> 
                 <Grid xs={12} className='postagens'>
                 </Grid>
             </Grid>

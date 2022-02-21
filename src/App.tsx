@@ -14,15 +14,15 @@ function App() {
       <Switch>
         <div style={{minHeight: '100vh'}}>
        
-        <Route exact path=' /'>
+        <Route exact path='/'>
             <Login />
           </Route>
 
-        <Route path=' /login'>
+        <Route path='/login'>
             <Login />
           </Route>
 
-          <Route path=' /home'>
+          <Route path='/home'>
             <Home />
           </Route>
         </div>
