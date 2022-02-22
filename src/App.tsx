@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import { Grid } from '@material-ui/core';
@@ -25,6 +26,11 @@ function App() {
           <Route path='/home'>
             <Home />
           </Route>
+
+          <Route path='/cadastrousuario'>
+            <CadastroUsuario />
+          </Route>
+          
         </div>
       </Switch>
      <Footer/>
