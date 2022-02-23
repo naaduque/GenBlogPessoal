@@ -8,7 +8,7 @@ import './Login.css';
 
 function Login() {
     let history = useHistory();
-    const {token, setToken} = useLocalStorage('token');
+    const [token, setToken] = useLocalStorage('token');
     const [userLogin, setUserLogin] = useState<UserLogin>(
     {
         id: 0,
@@ -22,7 +22,7 @@ function Login() {
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
 
         setUserLogin({
-            ... userLogin,
+            ...userLogin,
             [e.target.name]: e.target.value
         })
     }
