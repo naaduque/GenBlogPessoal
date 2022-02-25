@@ -31,7 +31,7 @@ function CadastroTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
               'Authorization': token
             }
@@ -52,15 +52,16 @@ function CadastroTema() {
             console.log("tema " + JSON.stringify(tema))
     
             if (id !== undefined) {
-                console.log(tema)
-                put(`/tema`, tema, setTema, {
+                put(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
                 })
                 alert('Tema atualizado com sucesso');
             } else {
-                post(`/tema`, tema, setTema, {
+                console.log(tema)
+
+                post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
