@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Postagem from '../../../models/Postagem';
-import { busca } from '../../../services/Service'
+import { busca } from '../../../services/Service';
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import './ListaPostagem.css';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
@@ -33,7 +33,7 @@ function ListaPostagem() {
     }
   }, [token])
 
-  async function getPost() {
+  async function getPosts() {
     await busca("/postagens", setPosts, {
       headers: {
         'Authorization': token
@@ -43,7 +43,7 @@ function ListaPostagem() {
 
   useEffect(() => {
 
-    getPost()
+    getPosts()
 
   }, [posts.length])
 
@@ -70,9 +70,9 @@ function ListaPostagem() {
               <CardActions>
                 <Box display="flex" justifyContent="center" mb={1.5}>
 
-                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className="marginLeft" size='small' color="primary">
                         atualizar
                       </Button>
                     </Box>
