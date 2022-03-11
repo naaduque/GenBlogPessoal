@@ -14,9 +14,9 @@ function TabPostagem() {
     <>
       <TabContext value={value}>
         <AppBar position="static">
-          <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1"/>
-            <Tab label="Sobre-nós" value="2" />
+          <Tabs className="backgroundColor"  centered indicatorColor="secondary" onChange={handleChange}>
+            <Tab label="Todos os posts" value="1"/>
+            <Tab label="Sobre mim" value="2" />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -24,10 +24,22 @@ function TabPostagem() {
             <ListaPostagem />
           </Box>
         </TabPanel>
+
         <TabPanel value="2">
-          <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
-          <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ut eveniet natus totam et, voluptate dicta tempore alias, odio nobis non eius cupiditate minima inventore pariatur! Ipsum itaque consectetur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo velit consequuntur suscipit fugiat, nam quis quod quaerat veritatis et, vel ratione beatae, facere neque! Quo animi porro voluptate saepe deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci, officia aut quidem dolorum deserunt iure dolorem doloribus velit nobis quas consequatur at ullam odit, nesciunt est nulla nihil excepturi!</Typography>
+          <Box display="flex" flexDirection="row">
+            <Box padding={5}>
+              <Typography variant="body1" gutterBottom align="justify" className='aboutme'>Meu nome é Natalia. Gosto de gatos, jogos, tecnologia e de escutar música. Se você quiser criar um post, fique à vontade. Pode me contar qual é seu filme favorito, por exemplo. Ou me contar o que você mais gosta de fazer. Uma das minhas animações favoritas é Adventure Time, aqui tem mais alguns personagens bonitinhos:
+              </Typography>
+            </Box>
+            <Box>
+              <img src="https://i.imgur.com/34VxyW5.gif" className='gifjake' alt="Jake" />
+            </Box>
+            <Box> 
+            <img src="https://i.imgur.com/ggeWI1o.gif" className='gifbeemo' alt="Beemo" />
+            </Box>
+          </Box>
         </TabPanel>
+
       </TabContext>
     </>
   );

@@ -1,22 +1,23 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
-import {Link} from 'react-router-dom';
-import {useHistory } from 'react-router-dom'
+import { AppBar, Toolbar, Typography, Box, IconButton, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom'
 import './Navbar.css'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useDispatch } from "react-redux";
 import { addToken } from '../../../store/tokens/actions';
-import {toast} from 'react-toastify';
+import { toast } from 'react-toastify';
+import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
     let history = useHistory();
     const dispatch = useDispatch();
 
-    function goLogout(){
+    function goLogout() {
         dispatch(addToken(''));
         toast.info('Usuário deslogado', {
             position: "top-right",
@@ -33,55 +34,53 @@ function Navbar() {
 
     var navbarComponent;
 
-    if(token != ""){
+    if (token != "") {
         navbarComponent = <AppBar position="static" className="backColor">
-        <Toolbar variant="dense">
-            <Box className='cursor'>
-                <Typography variant="h5" color="inherit">
-                    BlogPessoal
-                </Typography>
-            </Box>
+            <Toolbar variant="dense" className='bar'>
+                <Box>
+                    <Link to="/home" className='text-decorator-none'>
+                        <Typography variant="h6" className='titulo'>
+                            BlogPessoal
+                        </Typography>
+                    </Link>
+                </Box>
 
-            <Box display="flex" justifyContent="start">
-            <Link to="/home" className="text-decorator-none">
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" color="inherit">
-                        Home
-                    </Typography>
+                <Box display="flex">
+                    <Box className='m'>
+                        <Link to="/home" className='text-decorator-none text-color'>
+                            <Button color="inherit" style={{ color: 'white' }}>home</Button>
+                        </Link>
+                    </Box>
+
+                    <Box className='m'>
+                        <Link to='/posts' className='text-decorator-none text-color'>
+                            <Button color="inherit">posts</Button>
+                        </Link>
+                    </Box>
+
+                    <Box className='m'>
+                        <Link to='/temas' className='text-decorator-none text-color'>
+                            <Button color="inherit">temas</Button>
+                        </Link>
+                    </Box>
+
+                    <Box className='m'>
+                        <Link to='/formularioTema' className='text-decorator-none text-color'>
+                            <Button color="inherit">cadastrar temas</Button>
+                        </Link>
+                    </Box>
                 </Box>
-                </Link>
-                <Link to="/posts" className="text-decorator-none">
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" color="inherit">
-                        Postagens
-                    </Typography>
-                </Box>
-                </Link>
-                <Link to="/temas" className="text-decorator-none">
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" color="inherit">
-                        Temas
-                    </Typography>
-                </Box>
-                </Link>
-                <Link to="/formularioTema" className="text-decorator-none">
-                <Box mx={1} className='cursor'>
-                    <Typography variant="h6" color="inherit">
-                        Cadastrar tema
-                    </Typography>
-                </Box>
-                </Link>
-                
+
                 <Box mx={1} className='cursor' onClick={goLogout}>
-                    <Typography variant="h6" color="inherit">
-                        LogOut
-                    </Typography>
+                    <IconButton>
+                        <MeetingRoomIcon style={{ fontSize: 30, color: 'white' }} />
+                    </IconButton>
                 </Box>
-                
 
-            </Box>
-        </Toolbar>
-    </AppBar>
+
+
+            </Toolbar>
+        </AppBar>
     }
     return (
         <>

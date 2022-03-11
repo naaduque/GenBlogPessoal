@@ -38,20 +38,20 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
 
                     <Box paddingX={20} className="textHome">
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Olá, seja bem vindo!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Diga alguma coisa :</Typography>
+                        <Typography variant="h3" gutterBottom color="textPrimary" component="h4" align="center" className='titulo'>Seja bem vindo, aventureiro!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center" className='titulo'>Diga alguma coisa :</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="text-decorator-none">
-                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                            <Button variant="outlined" className='botao'>Ver Posts</Button>
                         </Link>
                     </Box>
                 </Grid>
-                <Grid item xs={6} > 
-                    <img src="https://media2.giphy.com/media/1wgWg37SF9FZS6tCCJ/giphy.gif" alt=" " width="640px" height="600" />
+                <Grid item xs={6} className='imagemhome'> 
+                    
                 </Grid> 
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

@@ -1,5 +1,5 @@
 .caixa{
-    background-color: crimson;
+    background-color: #da7194 ;
 }
 
 .titulo{
@@ -19,4 +19,13 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.imagemhome{
+    background-image: url(https://i.imgur.com/QCN1tuf.gif);
+    background-repeat: no-repeat;
+    width: 37,5vh;
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
 }

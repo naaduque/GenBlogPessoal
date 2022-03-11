@@ -1,5 +1,5 @@
 .backColor{
-    background: linear-gradient(36deg, #8b2222 30%, #3a0202 88%);
+    background: linear-gradient(36deg, #fab7d5 30%, #572d3b 88%);
 }
 
 .cursor {
@@ -9,4 +9,18 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.p{
+    padding-top: 5px;
+}
+
+.text-color{
+    color: white;
 }

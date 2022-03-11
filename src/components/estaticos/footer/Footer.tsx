@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid, Box, Typography } from '@material-ui/core';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import './Footer.css';
 import { useSelector } from 'react-redux';
@@ -20,27 +19,24 @@ function Footer() {
         <Grid alignItems="center" item xs={12}>
             <Box className='box1'>
                 <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                    <Typography variant="h5" align="center" gutterBottom className='textos'>Siga-nos nas redes sociais </Typography>
+                    <Typography variant="h6" align="center" gutterBottom className='textos'>Me siga nas redes sociais </Typography>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                        <FacebookIcon className='redes' />
+                    <a href="https://github.com/naaduque" target="_blank" className='marg'>
+                        <GitHubIcon className='redegit' />
                     </a>
-                    <a href="https://www.instagram.com/generationbrasil/" target="_blank">
-                        <InstagramIcon className='redes' />
-                    </a>
-                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                    <a href="https://www.linkedin.com/in/natalia-ferreira-duque/" target="_blank" className='marg'>
                         <LinkedInIcon className='redes' />  
                     </a>
                 </Box>
             </Box>
             <Box className='box2'>
                 <Box paddingTop={1}>
-                    <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2020 Copyright:</Typography>
+                    <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2022 Copyright:</Typography>
                 </Box>
                 <Box>
-                    <a target="_blank" href="https://brasil.generation.org">
-                        <Typography variant="subtitle2" gutterBottom className='textos' align="center">brasil.generation.org</Typography>
+                    <a target="_blank" href="https://www.instagram.com/naaduque/">
+                        <Typography variant="subtitle2" gutterBottom className='textos' align="center">nataliaduque</Typography>
                     </a>
                 </Box>
             </Box>

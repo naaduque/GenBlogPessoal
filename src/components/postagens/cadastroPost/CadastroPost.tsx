@@ -131,9 +131,9 @@ function CadastroPost() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
-                <TextField value={postagem.titulo} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={postagem.texto} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedPostagem(e)}id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Crie um post</Typography>
+                <TextField value={postagem.titulo} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedPostagem(e)} id="titulo" label="Título" placeholder="coloque pelo menos 5 letrinhas" variant="outlined" name="titulo" margin="normal" fullWidth />
+                <TextField value={postagem.texto} onChange={(e:ChangeEvent<HTMLInputElement>)=> updatedPostagem(e)}id="texto" label="Texto" placeholder="coloque pelo menos 10 letrinhas" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
@@ -151,8 +151,8 @@ function CadastroPost() {
                             ))
                         }
                     </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <FormHelperText>Escolha um tema para o seu post</FormHelperText>
+                    <Button type="submit" variant="contained" color="primary" className='color'>
                         Finalizar
                     </Button>
                 </FormControl>

@@ -1,3 +1,19 @@
 .titulo{
     font-weight: bold;
  }
+
+ .backgroundColor{
+    background: linear-gradient(36deg, #fab7d5 30%, #572d3b 88%);
+}
+
+.gifbeemo{
+    width: 140px;
+    height: auto;
+    padding: 40px;
+}
+
+.gifjake{
+    width: 320px;
+    height: auto;
+    padding: 5px;
+}

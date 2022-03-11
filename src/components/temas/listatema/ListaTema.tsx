@@ -66,7 +66,7 @@ useEffect(()=>{
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                  <Button variant="contained" size='small' color="primary" className='coratualizartema'>
                     atualizar
                   </Button>
                 </Box>

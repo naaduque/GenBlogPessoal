@@ -4,9 +4,9 @@
 
 .imagem{
     
-        background-image: url(https://images6.fanpop.com/image/photos/43700000/Wanda-WandaVision-1-06-All-New-Halloween-Spooktacular-wandavision-43797661-1440-1440.jpg);
+        background-image: url(https://i.imgur.com/9xEMs6l.png);
         background-repeat: no-repeat;
-        width: 100vh;
+        width: 50vh;
         min-height: 100vh;
         background-size: cover;
         background-position: center;
@@ -15,4 +15,16 @@
 
 .text-decorator-none{ 
     text-decoration: none;
+}
+
+.bgcolorlogin{
+   background-color: #f1d0e3;
+}
+
+.btnlogin{
+    background-color: #d24999 !important;
+}
+
+.colorinsidelogin{
+    background-color: white;
 }

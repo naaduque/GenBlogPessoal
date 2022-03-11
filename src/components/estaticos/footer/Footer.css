@@ -1,20 +1,29 @@
 .box1{
-    background-color: #3a0202;
+    background-color: #572d3b;
     
     height: "115px";
 }
 
 .box2{
-    background-color:#3a0202;
+    background-color: #572d3b;
     height: 60px;
 }
 
 .redes{
-    font-size: 60px !important;
+    font-size: 40px !important;
     color:  white;
 }
 
 .textos{
     color: white;
+}
+
+.redegit{
+    font-size: 35px !important;
+    color:  white;
+}
+
+.marg{
+    margin: 0 5px;
 }
 
