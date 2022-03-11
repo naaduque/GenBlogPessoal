@@ -40,7 +40,7 @@ function Navbar() {
                 <Box>
                     <Link to="/home" className='text-decorator-none'>
                         <Typography variant="h6" className='titulo'>
-                            BlogPessoal
+                            OManualDoHerói
                         </Typography>
                     </Link>
                 </Box>

@@ -16,7 +16,7 @@ function TabPostagem() {
         <AppBar position="static">
           <Tabs className="backgroundColor"  centered indicatorColor="secondary" onChange={handleChange}>
             <Tab label="Todos os posts" value="1"/>
-            <Tab label="Sobre mim" value="2" />
+            <Tab label="Sobre" value="2" />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -28,7 +28,7 @@ function TabPostagem() {
         <TabPanel value="2">
           <Box display="flex" flexDirection="row">
             <Box padding={5}>
-              <Typography variant="body1" gutterBottom align="justify" className='aboutme'>Meu nome é Natalia. Gosto de gatos, jogos, tecnologia e de escutar música. Se você quiser criar um post, fique à vontade. Pode me contar qual é seu filme favorito, por exemplo. Ou me contar o que você mais gosta de fazer. Uma das minhas animações favoritas é Adventure Time, aqui tem mais alguns personagens bonitinhos:
+              <Typography variant="body1" gutterBottom align="justify" className='aboutme'> Esse é o manual do herói, um espaço para os verdadeiros aventureiros. Se você quiser criar um post, fique à vontade. Pode contar qual é seu filme favorito, por exemplo. Ou contar o que você mais gosta de fazer. Uma das minhas animações favoritas é Adventure Time, aqui tem mais alguns personagens bonitinhos:
               </Typography>
             </Box>
             <Box>
